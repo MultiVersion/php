@@ -3,6 +3,7 @@ LABEL org.opencontainers.image.source="https://github.com/MultiVersion/php" org.
 
 ADD ./php-fpm.conf /opt/php-fpm.conf
 ADD ./www.conf /opt/www.conf
+ADD ./fastcgi_params /opt/fastcgi_params
 
 RUN \ 
   apt update && \ 
